@@ -25,7 +25,7 @@ function Resetpassword() {
         e.preventDefault()
         setLoading(true)
         try {
-            let res = await AxiosService.post(`https://pass-reset-feca.onrender.com/reset-password/${randomString}/${expirationTimestamp}`,{
+            let res = await AxiosService.post(`https://pass-reset-new.onrender.com/reset-password/${randomString}/${expirationTimestamp}`,{
                 newPassword:password
             })
 
