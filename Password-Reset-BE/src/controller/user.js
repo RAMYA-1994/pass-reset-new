@@ -6,6 +6,7 @@ import nodemailer from 'nodemailer'
 
 const signup = async(req,res)=>{
     try {
+        cpnsole.log(req.body)
         let user = await userModel.findOne({email:req.body.email})
         if(!user)
         {

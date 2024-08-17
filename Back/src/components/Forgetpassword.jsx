@@ -16,7 +16,7 @@ const forgetpassword = async(e)=>{
     e.preventDefault()
     setLoading(true)
     try {
-        let res = await AxiosService.post('https://pass-reset-new.onrender.com/forget-password',{
+        let res = await AxiosService.post('https://pass-reset-new.onrender.com/user/forget-password',{
             email
         })
         if(res.status==201)

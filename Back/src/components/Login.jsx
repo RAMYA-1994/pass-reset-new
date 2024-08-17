@@ -22,7 +22,7 @@ function Login() {
     e.preventDefault()
     setLoading(true)
     try {
-      let res = await AxiosService.post('https://pass-reset-new.onrender.com/login',{
+      let res = await AxiosService.post('https://pass-reset-new.onrender.com/user/login',{
         email,
         password
       })
